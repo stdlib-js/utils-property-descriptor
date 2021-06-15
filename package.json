@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/utils-property-descriptor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Return a property descriptor for an object's own property.",
   "license": "Apache-2.0",
   "author": {
