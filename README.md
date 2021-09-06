@@ -114,6 +114,15 @@ console.log( desc );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/assert/has-own-property`][@stdlib/assert/has-own-property]: test if an object has a specified property.
+-   [`@stdlib/utils/define-property`][@stdlib/utils/define-property]: define (or modify) an object property.
+-   [`@stdlib/utils/property-descriptor-in`][@stdlib/utils/property-descriptor-in]: return a property descriptor for an object's own or inherited property.
+-   [`@stdlib/utils/property-descriptors`][@stdlib/utils/property-descriptors]: return an object's own property descriptors.
+
 </section>
 
 <!-- /.related -->
@@ -174,6 +183,18 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/utils-property-descriptor/main/LICENSE
+
+<!-- <related-links> -->
+
+[@stdlib/assert/has-own-property]: https://github.com/stdlib-js/assert-has-own-property
+
+[@stdlib/utils/define-property]: https://github.com/stdlib-js/utils-define-property
+
+[@stdlib/utils/property-descriptor-in]: https://github.com/stdlib-js/utils-property-descriptor-in
+
+[@stdlib/utils/property-descriptors]: https://github.com/stdlib-js/utils-property-descriptors
+
+<!-- </related-links> -->
 
 </section>
 
