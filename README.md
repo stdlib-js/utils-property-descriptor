@@ -20,7 +20,7 @@ limitations under the License.
 
 # propertyDescriptor
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Return a property descriptor for an object's own property.
 
@@ -118,10 +118,10 @@ console.log( desc );
 
 ## See Also
 
--   [`@stdlib/assert/has-own-property`][@stdlib/assert/has-own-property]: test if an object has a specified property.
--   [`@stdlib/utils/define-property`][@stdlib/utils/define-property]: define (or modify) an object property.
--   [`@stdlib/utils/property-descriptor-in`][@stdlib/utils/property-descriptor-in]: return a property descriptor for an object's own or inherited property.
--   [`@stdlib/utils/property-descriptors`][@stdlib/utils/property-descriptors]: return an object's own property descriptors.
+-   <span class="package-name">[`@stdlib/assert/has-own-property`][@stdlib/assert/has-own-property]</span><span class="delimiter">: </span><span class="description">test if an object has a specified property.</span>
+-   <span class="package-name">[`@stdlib/utils/define-property`][@stdlib/utils/define-property]</span><span class="delimiter">: </span><span class="description">define (or modify) an object property.</span>
+-   <span class="package-name">[`@stdlib/utils/property-descriptor-in`][@stdlib/utils/property-descriptor-in]</span><span class="delimiter">: </span><span class="description">return a property descriptor for an object's own or inherited property.</span>
+-   <span class="package-name">[`@stdlib/utils/property-descriptors`][@stdlib/utils/property-descriptors]</span><span class="delimiter">: </span><span class="description">return an object's own property descriptors.</span>
 
 </section>
 
@@ -172,8 +172,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/utils-property-descriptor/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/utils-property-descriptor?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/utils-property-descriptor.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/utils-property-descriptor/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
