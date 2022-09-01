@@ -37,7 +37,8 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert-has-own-property": "^0.0.x"
+    "@stdlib/assert-has-own-property": "^0.0.x",
+    "@stdlib/error-tools-fmtprodmsg": "^0.0.x"
   },
   "devDependencies": {
     "@stdlib/assert-has-symbol-support": "^0.0.x",
