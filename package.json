@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/utils-property-descriptor",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "description": "Return a property descriptor for an object's own property.",
   "license": "Apache-2.0",
   "author": {
@@ -37,15 +37,15 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert-has-own-property": "^0.0.7"
+    "@stdlib/assert-has-own-property": "^0.1.0"
   },
   "devDependencies": {
-    "@stdlib/assert-has-symbol-support": "^0.0.8",
+    "@stdlib/assert-has-symbol-support": "^0.1.0",
     "@stdlib/assert-is-plain-object": "^0.0.7",
     "@stdlib/bench": "^0.0.12",
     "@stdlib/random-base-randu": "^0.0.8",
-    "@stdlib/symbol-ctor": "^0.0.7",
-    "@stdlib/utils-define-property": "^0.0.9",
+    "@stdlib/symbol-ctor": "^0.1.0",
+    "@stdlib/utils-define-property": "^0.1.0",
     "proxyquire": "^2.0.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
