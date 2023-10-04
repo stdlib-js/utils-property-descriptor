@@ -35,38 +35,30 @@ limitations under the License.
 
 > Return a property descriptor for an object's own property.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-property-descriptor
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-propertyDescriptor = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptor@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var propertyDescriptor = require( 'path/to/vendor/umd/utils-property-descriptor/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptor@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.propertyDescriptor;
-})();
-</script>
+var propertyDescriptor = require( '@stdlib/utils-property-descriptor' );
 ```
 
 #### propertyDescriptor( obj, property )
@@ -106,14 +98,9 @@ var desc = propertyDescriptor( obj, 'a' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptor@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var defineProperty = require( '@stdlib/utils-define-property' );
+var propertyDescriptor = require( '@stdlib/utils-property-descriptor' );
 
 function Foo() {
     this.beep = 'boop';
@@ -136,11 +123,6 @@ var desc = propertyDescriptor( obj, 'baz' );
 
 console.log( desc );
 // => {'configurable':true,'enumerable':false,'writable':true,'value':'qux'}
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -203,8 +185,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/utils-property-descriptor.svg
 [npm-url]: https://npmjs.org/package/@stdlib/utils-property-descriptor
 
-[test-image]: https://github.com/stdlib-js/utils-property-descriptor/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/utils-property-descriptor/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/utils-property-descriptor/actions/workflows/test.yml/badge.svg?branch=v0.1.1
+[test-url]: https://github.com/stdlib-js/utils-property-descriptor/actions/workflows/test.yml?query=branch:v0.1.1
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/utils-property-descriptor/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/utils-property-descriptor?branch=main
@@ -235,13 +217,13 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/has-own-property]: https://github.com/stdlib-js/assert-has-own-property/tree/umd
+[@stdlib/assert/has-own-property]: https://github.com/stdlib-js/assert-has-own-property
 
-[@stdlib/utils/define-property]: https://github.com/stdlib-js/utils-define-property/tree/umd
+[@stdlib/utils/define-property]: https://github.com/stdlib-js/utils-define-property
 
-[@stdlib/utils/property-descriptor-in]: https://github.com/stdlib-js/utils-property-descriptor-in/tree/umd
+[@stdlib/utils/property-descriptor-in]: https://github.com/stdlib-js/utils-property-descriptor-in
 
-[@stdlib/utils/property-descriptors]: https://github.com/stdlib-js/utils-property-descriptors/tree/umd
+[@stdlib/utils/property-descriptors]: https://github.com/stdlib-js/utils-property-descriptors
 
 <!-- </related-links> -->
 
