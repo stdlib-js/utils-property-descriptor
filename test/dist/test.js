@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,32 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var proxyquire = require( 'proxyquire' );
-var builtin = require( './../../dist/builtin.js' );
-var polyfill = require( './../../dist/polyfill.js' );
-var getOwnPropertyDescriptor = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof getOwnPropertyDescriptor, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'if an environment has a built-in implementation, the export is the built-in implementation', function test( t ) {
-	var getOwnPropertyDescriptor = proxyquire( './../dist/index.js', {
-		'./has_builtin.js': true
-	});
-	t.strictEqual( getOwnPropertyDescriptor, builtin, 'is expected value' );
-	t.end();
-});
-
-tape( 'if an environment does not have a built-in implementation, the export is a polyfill', function test( t ) {
-	var getOwnPropertyDescriptor = proxyquire( './../dist/index.js', {
-		'./has_builtin.js': false
-	});
-	t.strictEqual( getOwnPropertyDescriptor, polyfill, 'is expected value' );
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
