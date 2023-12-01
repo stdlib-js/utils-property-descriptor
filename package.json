@@ -42,7 +42,7 @@
   "devDependencies": {
     "@stdlib/assert-has-symbol-support": "^0.1.1",
     "@stdlib/assert-is-plain-object": "^0.1.1",
-    "@stdlib/bench": "^0.1.0",
+    "@stdlib/bench": "^0.2.1",
     "@stdlib/random-base-randu": "^0.1.0",
     "@stdlib/symbol-ctor": "^0.1.1",
     "@stdlib/utils-define-property": "^0.1.1",
