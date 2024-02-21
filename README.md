@@ -35,19 +35,32 @@ limitations under the License.
 
 > Return a property descriptor for an object's own property.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-property-descriptor
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import propertyDescriptor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptor@esm/index.mjs';
-```
-The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-property-descriptor/tags). For example,
-
-```javascript
-import propertyDescriptor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptor@v0.2.0-esm/index.mjs';
+var propertyDescriptor = require( '@stdlib/utils-property-descriptor' );
 ```
 
 #### propertyDescriptor( obj, property )
@@ -87,14 +100,9 @@ var desc = propertyDescriptor( obj, 'a' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@esm/index.mjs';
-import propertyDescriptor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptor@esm/index.mjs';
+```javascript
+var defineProperty = require( '@stdlib/utils-define-property' );
+var propertyDescriptor = require( '@stdlib/utils-property-descriptor' );
 
 function Foo() {
     this.beep = 'boop';
@@ -117,10 +125,6 @@ var desc = propertyDescriptor( obj, 'baz' );
 
 console.log( desc );
 // => {'configurable':true,'enumerable':false,'writable':true,'value':'qux'}
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -153,7 +157,7 @@ console.log( desc );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -183,8 +187,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/utils-property-descriptor.svg
 [npm-url]: https://npmjs.org/package/@stdlib/utils-property-descriptor
 
-[test-image]: https://github.com/stdlib-js/utils-property-descriptor/actions/workflows/test.yml/badge.svg?branch=v0.2.0
-[test-url]: https://github.com/stdlib-js/utils-property-descriptor/actions/workflows/test.yml?query=branch:v0.2.0
+[test-image]: https://github.com/stdlib-js/utils-property-descriptor/actions/workflows/test.yml/badge.svg?branch=v0.2.1
+[test-url]: https://github.com/stdlib-js/utils-property-descriptor/actions/workflows/test.yml?query=branch:v0.2.1
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/utils-property-descriptor/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/utils-property-descriptor?branch=main
@@ -218,13 +222,13 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/has-own-property]: https://github.com/stdlib-js/assert-has-own-property/tree/esm
+[@stdlib/assert/has-own-property]: https://github.com/stdlib-js/assert-has-own-property
 
-[@stdlib/utils/define-property]: https://github.com/stdlib-js/utils-define-property/tree/esm
+[@stdlib/utils/define-property]: https://github.com/stdlib-js/utils-define-property
 
-[@stdlib/utils/property-descriptor-in]: https://github.com/stdlib-js/utils-property-descriptor-in/tree/esm
+[@stdlib/utils/property-descriptor-in]: https://github.com/stdlib-js/utils-property-descriptor-in
 
-[@stdlib/utils/property-descriptors]: https://github.com/stdlib-js/utils-property-descriptors/tree/esm
+[@stdlib/utils/property-descriptors]: https://github.com/stdlib-js/utils-property-descriptors
 
 <!-- </related-links> -->
 
