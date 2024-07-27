@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import propertyDescriptor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptor@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-property-descriptor/tags). For example,
+
+```javascript
 import propertyDescriptor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptor@v0.2.2-deno/mod.js';
 ```
 
@@ -84,7 +89,7 @@ var desc = propertyDescriptor( obj, 'a' );
 
 ```javascript
 import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@deno/mod.js';
-import propertyDescriptor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptor@v0.2.2-deno/mod.js';
+import propertyDescriptor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptor@deno/mod.js';
 
 function Foo() {
     this.beep = 'boop';
