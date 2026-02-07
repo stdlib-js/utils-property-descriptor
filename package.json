@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/utils-property-descriptor",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Return a property descriptor for an object's own property.",
   "license": "Apache-2.0",
   "author": {
@@ -40,11 +40,11 @@
     "@stdlib/assert-has-own-property": "^0.2.2"
   },
   "devDependencies": {
-    "@stdlib/assert-has-symbol-support": "^0.2.2",
+    "@stdlib/assert-has-symbol-support": "^0.2.3",
     "@stdlib/assert-is-plain-object": "^0.2.2",
-    "@stdlib/random-base-randu": "^0.2.1",
-    "@stdlib/symbol-ctor": "^0.2.2",
-    "@stdlib/utils-define-property": "^0.2.4",
+    "@stdlib/random-base-randu": "^0.2.2",
+    "@stdlib/symbol-ctor": "^0.2.3",
+    "@stdlib/utils-define-property": "^0.2.5",
     "proxyquire": "^2.0.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
